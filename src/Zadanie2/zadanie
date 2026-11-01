@@ -1,0 +1,13 @@
+public class DiscountService {
+
+    public double calculateDiscount(String customerType, double price) {
+        if (customerType.equals("REGULAR")) {
+            return price * 0.05;
+        } else if (customerType.equals("VIP")) {
+            return price * 0.15;
+        } else if (customerType.equals("EMPLOYEE")) {
+            return price * 0.30;
+        }
+        return 0;
+    }
+}

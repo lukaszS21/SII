@@ -1,0 +1,18 @@
+public class ReportService {
+
+    public void generateReport(String type, List<Zadanie1.TestResult> results) {
+        if (type.equals("TXT")) {
+            for (Zadanie1.TestResult r : results) {
+                System.out.println("Writing TXT: " + r.getName());
+            }
+        } else if (type.equals("HTML")) {
+            for (Zadanie1.TestResult r : results) {
+                System.out.println("Writing HTML: <p>" + r.getName() + "</p>");
+            }
+        } else if (type.equals("XML")) {
+            for (Zadanie1.TestResult r : results) {
+                System.out.println("Writing XML: <test>" + r.getName() + "</test>");
+            }
+        }
+    }
+}

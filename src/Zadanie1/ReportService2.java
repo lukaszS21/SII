@@ -1,3 +1,5 @@
+package Zadanie1;
+
 import java.util.List;
 
 public class ReportService2 {
